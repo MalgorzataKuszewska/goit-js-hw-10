@@ -1,4 +1,4 @@
-import { fetchBreeds } from './cat-api.js';
+import { fetchBreeds, fetchCatByBreed } from './cat-api.js';
 
 const breedSelect = document.querySelector('.breed-select');
 
@@ -18,8 +18,6 @@ fetchBreeds()
   .catch(error => {
     console.error('Błąd podczas pobierania ras:', error);
   });
-
-import { fetchCatByBreed } from './cat-api.js';
 
 const catInfoDiv = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
